@@ -1,8 +1,15 @@
 import React, { useState } from 'react'
+import app from '../Firebase';
 
 const Navbar = () => {
 
   const [signed, setSigned] = useState(false)
+
+  function handleSignOUT(){
+    setSigned(!signed);
+    app.auth.signOut();
+  }
+
 
   return (
     <div className='nav'>
@@ -11,7 +18,7 @@ const Navbar = () => {
           <button>Sign UP</button>
           {signed ?
             <button
-              onClick={(e) => setSigned(!signed)}>
+              onClick={() => handleSignOUT()}>
                 Sign OUT
             </button> :
             <button

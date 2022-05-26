@@ -1,12 +1,17 @@
 import React from 'react'
 import Navbar from './components/Navbar'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Hell from './components/Home';
 
 const App = () => {
   return (
-    <div>
+    <BrowserRouter>
       <Navbar/>
-    </div>
+      <Routes>
+        <Route exact path='/' element={<Hell/>} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

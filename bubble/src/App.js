@@ -1,8 +1,12 @@
 import React from 'react'
+import Navbar from './components/Navbar'
+import './App.css';
 
 const App = () => {
   return (
-    <div>My Auth App</div>
+    <div>
+      <Navbar/>
+    </div>
   )
 }
 

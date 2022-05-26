@@ -1,3 +1,3 @@
 # Firebase-Auth
 
-Firebase Authentication setup for Video Conferencing app
+Firebase Authentication On a React App

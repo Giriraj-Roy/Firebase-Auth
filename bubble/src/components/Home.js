@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
+import app from "../Firebase";
 
-const Hell = () => {
+const Home = () => {
   return (
     <>
-        hello from home
+      <h1>Home</h1>
+      <button onClick={() => app.auth().signOut()}>Sign out</button>
     </>
-  )
-}
+  );
+};
 
-export default Hell
+export default Home;
